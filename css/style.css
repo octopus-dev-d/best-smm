@@ -53,3 +53,49 @@ body {
     color: #FFFFFF;
     text-transform: uppercase;
 }
+
+.container-top {
+    display: flex;
+    margin-top: 78px;
+    margin-left: 156px;
+}
+
+.top-container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-container {
+    display: block;
+    margin-left: 29px;
+}
+
+.menu-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.menu-list-item {
+    padding-right: 5px;
+}
+
+.menu-link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
