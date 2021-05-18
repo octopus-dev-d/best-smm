@@ -1,4 +1,4 @@
-/*ОБЩИЕ СТИОИ*/
+/*ОБЩИЕ СТИЛИ*/
 
 * {
     box-sizing: border-box;
@@ -56,7 +56,7 @@ body {
 
 .container-top {
     display: flex;
-    margin-top: 78px;
+    padding-top: 78px;
     margin-left: 156px;
 }
 
@@ -98,4 +98,33 @@ body {
     line-height: 14px;
     color: #FFFFFF;
     text-transform: uppercase;
+}
+
+/*СТИЛИ БЛОКА О НАС*/
+
+.about-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about-blocks-dis {
+    display: flex;
+}
+
+.description {
+    width: 308px;
+}
+
+.about-headlines {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #6F7188;
+    margin: 0;
+}
+
+.about-description {
+    font-size: 24px;
+    margin: 0;
 }
