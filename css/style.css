@@ -20,7 +20,7 @@ body {
     background-color: white;
     position: relative;
     width: 100%;
-    height: 789px;
+    height: 785px;
 }
 
 .container-buttom {
@@ -100,7 +100,32 @@ body {
     text-transform: uppercase;
 }
 
+.menu-link:hover {
+    background: linear-gradient(#FF2F34 0%, #F25D03 100%); /* Градиент для текста */
+    -webkit-background-clip: text; /* Обрезаем фон по тексту */
+    -webkit-text-fill-color: transparent;
+}
+
+
 /*СТИЛИ БЛОКА О НАС*/
+
+.about {
+   font-weight: bold;
+   font-size: 80px;
+   line-height: 94px;
+   color: #6F7188;
+   text-transform: uppercase; 
+   margin-top: 46px;
+   margin-left: 156px;
+   margin-bottom: 38px;
+}
+
+.horizontal-line {
+    width: 77px;
+    height: 14px;
+    margin-left: 156px;
+    margin-bottom: 101px;
+}
 
 .about-blocks {
     display: flex;
@@ -110,10 +135,12 @@ body {
 
 .about-blocks-dis {
     display: flex;
+    margin-bottom: 56px;
 }
 
 .description {
     width: 308px;
+    margin-left: 23px;
 }
 
 .about-headlines {
@@ -127,4 +154,5 @@ body {
 .about-description {
     font-size: 24px;
     margin: 0;
+    color: #6F7188;
 }
