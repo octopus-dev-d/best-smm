@@ -21,7 +21,7 @@ body {
   background-position: center top;
 }
 
-.section-title {
+.section-title, .section-services {
   font-weight: bold;
   font-size: 80px;
   line-height: 94px;
@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-  width: 95%;
+  width: 100%;
   max-width: 1040px;
   margin: auto;
 }
@@ -95,4 +95,239 @@ body {
   color: #fff;
   margin-top: 37px;
   margin-bottom: 81px;
+}
+
+/*СТИЛИ БЛОКА НАШИ УСЛУГИ*/
+
+.services {
+  background: #F7F3F3;
+  position: relative;
+}
+
+.section-services {
+  margin: 0;
+  padding-top: 69px;
+}
+
+.section-text {
+  color: #6F7188;
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 18px;
+}
+
+.swiper-slide, .projects-slide {
+  margin-bottom: 39px;
+}
+
+.projects-slide {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.project-image {
+  width: 49%;
+}
+
+.slider, .slider-design, .slider-production {
+  display: flex;
+}
+
+.slider-design {
+  flex-direction: row-reverse;
+}
+
+.slider-production {
+  flex-direction: row-reverse;
+}
+
+.project-text {
+  background: #fff;
+  width: 49%;
+  margin-left: 21px;
+}
+
+.project-text-design {
+  background: #fff;
+  width: 49%;
+  margin-left: 0;
+  margin-right: 21px;
+}
+
+.project-text-production {
+  background: #fff;
+  width: 49%;
+  margin-left: 0;
+  margin-right: 21px;
+}
+
+.project-title {
+  color: #FF2F34;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  padding-left: 23px;
+  margin: 25px 0;
+}
+
+.project-time {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.project-icon {
+  padding-right: 8px;
+}
+
+.ecllipse1 {
+  width: 38px;
+  height: 38px;
+  background: linear-gradient(180deg, #FF2F34 0%, #F25D03 100%);
+  border-radius: 50%;
+}
+
+.ecllipse2 {
+  width: 22px;
+  height: 22px;
+  background: linear-gradient(180deg, #FF2F34 0%, #F25D03 100%);
+  border-radius: 50%;
+  margin-left: 16px;
+}
+
+.ecllipse3 {
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(180deg, #FF2F34 0%, #F25D03 100%);
+  border-radius: 50%;
+  margin-left: 8px;
+}
+
+.ecllipse1-design {
+  width: 38px;
+  height: 38px;
+  background: linear-gradient(180deg, #FF2F34 0%, #F25D03 100%);
+  border-radius: 50%;
+  margin-left: 28px;
+}
+
+.ecllipse2-design {
+  width: 22px;
+  height: 22px;
+  background: linear-gradient(180deg, #FF2F34 0%, #F25D03 100%);
+  border-radius: 50%;
+  margin-left: 41px;
+}
+
+.ecllipse3-design {
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(180deg, #FF2F34 0%, #F25D03 100%);
+  border-radius: 50%;
+  margin-left: 25px;
+}
+
+.project-paragraph {
+  font-size: 24px;
+  line-height: 28px;
+  color: #6F7188;
+  margin: 0;
+}
+
+.first-par {
+  padding-top: 12px;
+  margin-left: 20px;
+}
+
+.second-par {
+  margin-left: 20px;
+}
+
+.second-par-production {
+  margin-left: 20px;
+  padding-bottom: 50px;
+}
+
+.third-par {
+  margin-left: 38px;
+}
+
+.first-par-design {
+  padding-top: 12px;
+  margin-left: 20px;
+}
+
+.second-par-design {
+  margin-left: 45px;
+}
+
+.third-par-design {
+  margin-left: 20px;
+  font-size: 22px;
+}
+
+/*КАРУСЕЛЬ ДЛЯ БЛОКА НАШИ УСЛУГИ*/
+
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev {}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+/* Конкретный слайдер*/
+
+.swiper-slide .projects-slide, .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 60px;
+  margin: -30px 140px 0px 140px;
+}
+
+.swiper-slide .projects-slide, .slick-arrow.slick-prev {
+  left: 0;
+  background: url('../img/left-arrow.svg') 0 0 / 100% no-repeat;
+  border: none;
+}
+
+.swiper-slide .projects-slide, .slick-arrow.slick-next {
+  right: 0;
+  background: url('../img/right-arrow.svg') 0 0 / 100% no-repeat;
+  border: none;
 }
