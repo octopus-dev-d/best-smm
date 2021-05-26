@@ -23,12 +23,31 @@ body {
 
 .company-header {
   margin-left: -40px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.company-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -963px;
+  width: 77px;
+  height: 14px;
+  background: linear-gradient(180deg, #FF2F34 0%, #F25D03 100%);
+  right: 30px;
+  top: 35px;
+  margin: 0 auto;
+  display: block;
+  transform: rotate(-90deg);
 }
 
 .menu-list {
   display: flex;
   list-style: none;
   text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .menu-link-top {
@@ -38,6 +57,10 @@ body {
   margin-right: 14px;
 }
 
+.menu-link-top:hover {
+  color:rgba(242, 93, 3, 1);
+}
+
 .menu-link-top-tel {
   text-decoration: none;
   color: rgba(242, 93, 3, 1);
@@ -45,11 +68,19 @@ body {
   line-height: 21px;
 }
 
+.menu-link-top-tel:hover {
+  font-weight: bold;
+}
+
 .menu-link {
   text-decoration: none;
   color: #FFFFFF;
   font-size: 12px;
   margin-right: 5px;
+}
+
+.menu-link:hover {
+  color: rgba(242, 93, 3, 1);
 }
 
 .nav-arrow {
@@ -398,4 +429,41 @@ body {
   right: 0;
   background: url('../img/right-arrow.svg') 0 0 / 100% no-repeat;
   border: none;
+}
+
+/*СТИЛИ ДЛЯ БЛОКА ТАРИФЫ*/
+
+.tariffs {
+  margin: 0;
+  padding-top: 69px;
+  background-image: url(../img/tariffs-bg.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.section-tariffs-title {
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  color: #6F7188;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 0;
+}
+
+.section-tariffs-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -963px;
+  width: 77px;
+  height: 14px;
+  background: linear-gradient(180deg, #FF2F34 0%, #F25D03 100%);
+  right: 0;
+  margin: -53px auto;
+  display: block;
+}
+
+.card {
+  margin-top: 324px;
 }
