@@ -19,7 +19,6 @@ body {
   background-image: url("../img/header-logo.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: cover;
 }
 
 .company-header {
@@ -440,6 +439,7 @@ body {
   background-image: url(../img/tariffs-bg.png);
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: cover;
 }
 
 .section-tariffs-title {
@@ -535,4 +535,158 @@ body {
   line-height: 14px;
   color: #CBC0C7;
   text-decoration: none;
+}
+
+/*СТИЛИ ДЛЯ БЛОКА ПОРТФОЛИО*/
+
+.portfolio {
+  background-color: #000000;
+}
+
+.section-portfolio-title {
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding-top: 120px;
+  position: relative;
+  padding-bottom: 55px;
+  margin: 0;
+}
+
+.section-portfolio-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -963px;
+  width: 77px;
+  height: 14px;
+  background: linear-gradient(180deg, #FF2F34 0%, #F25D03 100%);
+  right: 0;
+  margin: 0 auto;
+  display: block;
+}
+
+.portfolio-cards {
+  margin-top: 240px;
+  padding-bottom: 112px;
+}
+
+.pf-cards:nth-child(2) {
+  margin: 0 21px;
+}
+
+/*СТИЛИ ДЛЯ БЛОКА ОТЗЫВЫ*/
+
+.section-rewiews-title {
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  color: #6F7188;
+  text-transform: uppercase;
+  padding-top: 120px;
+  position: relative;
+  padding-bottom: 55px;
+  margin: 0;
+}
+
+.section-rewiews-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -963px;
+  width: 77px;
+  height: 14px;
+  background: linear-gradient(180deg, #FF2F34 0%, #F25D03 100%);
+  right: 0;
+  margin: 0 auto;
+  display: block;
+}
+
+.rewiews-container {
+  background-color: rgba(247, 243, 243, 0.8);
+  border: 1px solid #CBC0C7;
+  margin-top: 181px;
+  margin-bottom: 121px;
+}
+
+.rewiews-text-container {
+  background-color: rgba(247, 243, 243, 0.8);
+  padding: 67px 269px;
+}
+
+.rewiews-text-container-title {
+  text-transform: uppercase;
+  color: #6F7188;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.rewiews-text-container-des {
+  color: #6F7188;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.rewiews-text-container-company {
+  color: #6F7188;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.letter {
+  background-color: #6F7188;
+  width: 210px;
+  height: 36px;
+  margin: 0 899px;
+}
+
+.letter-btn {
+  padding: 4px 26px;
+  font-size: 12px;
+  line-height: 14px;
+  color:#FFFFFF;
+}
+
+/*СТИЛИ ДЛЯ БЛОКА НАШИ КЛИЕНТЫ*/
+
+.clients {
+  background-color: #F3F1F1;
+}
+
+.section-clients-title {
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  color: #6F7188;
+  text-transform: uppercase;
+  padding-top: 120px;
+  position: relative;
+  padding-bottom: 55px;
+  margin: 0;
+}
+
+.section-clients-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -963px;
+  width: 77px;
+  height: 14px;
+  background: linear-gradient(180deg, #FF2F34 0%, #F25D03 100%);
+  right: 0;
+  margin: 0 auto;
+  display: block;
+}
+
+.logo-container {
+  display: flex;
+  margin-top: 177px;
+  justify-content: space-between;
+  padding-bottom: 117px;
 }
