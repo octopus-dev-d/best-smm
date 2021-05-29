@@ -24,14 +24,14 @@ body {
 .company-header {
   margin-left: -40px;
   position: relative;
-  padding-left: 30px;
+  padding-left: 60px;
 }
 
 .company-header::after {
   content: "";
   position: absolute;
   bottom: 0;
-  left: -963px;
+  left: -910px;
   width: 77px;
   height: 14px;
   background: linear-gradient(180deg, #FF2F34 0%, #F25D03 100%);
@@ -104,7 +104,7 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-  left: -963px;
+  left: -1020px;
   width: 77px;
   height: 14px;
   background: linear-gradient(180deg, #FF2F34 0%, #F25D03 100%);
@@ -119,6 +119,13 @@ body {
   margin: auto;
 }
 
+.container-swiper {
+  width: 100%;
+  max-width: 1230px;
+  margin: auto;
+  position: relative;
+}
+
 .about-block {
   display: flex;
   flex-wrap: wrap;
@@ -128,6 +135,10 @@ body {
 .about-item {
   margin-bottom: 53px;
   display: flex;
+}
+
+.about-item-img {
+  margin-right: 25px;
 }
 
 .about-item-description {
@@ -160,6 +171,7 @@ body {
   font-weight: bold;
   color: #fff;
   margin-top: 404px;
+  margin-left: 30px;
 }
 
 .btn-about {
@@ -206,7 +218,7 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-  left: -963px;
+  left: -1020px;
   width: 77px;
   height: 14px;
   background: linear-gradient(180deg, #FF2F34 0%, #F25D03 100%);
@@ -380,6 +392,7 @@ body {
 /* Лента слайдов */
 .slick-track {
   display: flex;
+  align-items: center;
 }
 /* Слайд */
 .slick-slide{}
@@ -409,27 +422,7 @@ body {
 
 /* Конкретный слайдер*/
 
-.swiper-slide .projects-slide, .slick-arrow {
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  font-size: 0;
-  width: 30px;
-  height: 60px;
-  margin: -30px 140px 0px 140px;
-}
 
-.swiper-slide .projects-slide, .slick-arrow.slick-prev {
-  left: 0;
-  background: url('../img/left-arrow.svg') 0 0 / 100% no-repeat;
-  border: none;
-}
-
-.swiper-slide .projects-slide, .slick-arrow.slick-next {
-  right: 0;
-  background: url('../img/right-arrow.svg') 0 0 / 100% no-repeat;
-  border: none;
-}
 
 /*СТИЛИ ДЛЯ БЛОКА ТАРИФЫ*/
 
@@ -456,7 +449,7 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-  left: -963px;
+  left: -1020px;
   width: 77px;
   height: 14px;
   background: linear-gradient(180deg, #FF2F34 0%, #F25D03 100%);
@@ -496,7 +489,7 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-  left: -963px;
+  left: -1020px;
   width: 77px;
   height: 14px;
   background: linear-gradient(180deg, #FF2F34 0%, #F25D03 100%);
@@ -559,7 +552,7 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-  left: -963px;
+  left: -1020px;
   width: 77px;
   height: 14px;
   background: linear-gradient(180deg, #FF2F34 0%, #F25D03 100%);
@@ -571,11 +564,57 @@ body {
 .portfolio-cards {
   margin-top: 240px;
   padding-bottom: 112px;
+  position: relative;
 }
 
-.pf-cards:nth-child(2) {
-  margin: 0 21px;
+.portfolio-cards .slick-arrow {
+  position: absolute;
+  top: 70%;
+  margin: -80px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 60px;
 }
+
+.portfolio-cards .slick-arrow.slick-prev {
+  left: 0;
+  background: url(../img/ptf-btn-left.svg) 0 0 / 100% no-repeat;
+  border: none;
+}
+
+.portfolio-cards .slick-arrow.slick-next {
+  right: 0;
+  background: url(../img/ptf-btn-right.svg) 0 0 / 100% no-repeat;
+  border: none;
+}
+
+.portfolio-cards .slick-dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding-left: 500px;
+  margin-top: 60px;
+  margin-bottom: 44px;
+}
+.portfolio-cards .slick-dots li{
+  list-style: none;
+  margin: 0 8px;
+}
+.portfolio-cards .slick-dots li button{
+  font-size: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #CBC0C7;
+  border: none;
+}
+
+.portfolio-cards .slick-dots li.slick-active button {
+  background-color: #6F7188;
+}
+
 
 /*СТИЛИ ДЛЯ БЛОКА ОТЗЫВЫ*/
 
@@ -595,7 +634,7 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-  left: -963px;
+  left: -1020px;
   width: 77px;
   height: 14px;
   background: linear-gradient(180deg, #FF2F34 0%, #F25D03 100%);
@@ -607,13 +646,64 @@ body {
 .rewiews-container {
   background-color: rgba(247, 243, 243, 0.8);
   border: 1px solid #CBC0C7;
-  margin-top: 181px;
+  margin-top: 112px;
   margin-bottom: 121px;
+  margin-left: 65px;
+  width: 1102px;
+}
+
+.rewiews-container .slick-arrow {
+  position: absolute;
+  top: 70%;
+  margin: -80px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 60px;
+}
+
+.rewiews-container .slick-arrow.slick-prev {
+  left: 0;
+  background: url(../img/left-arrow.svg) 0 0 / 100% no-repeat;
+  border: none;
+}
+
+.rewiews-container .slick-arrow.slick-next {
+  right: 0;
+  background: url(../img/right-arrow.svg) 0 0 / 100% no-repeat;
+  border: none;
+}
+
+.rewiews-container .slick-dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding-left: 500px;
+  margin-top: 60px;
+  margin-bottom: 44px;
+}
+.rewiews-container .slick-dots li{
+  list-style: none;
+  margin: 0 8px;
+}
+.rewiews-container .slick-dots li button{
+  font-size: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #CBC0C7;
+  border: none;
+}
+
+.rewiews-container .slick-dots li.slick-active button {
+  background-color: #6F7188;
 }
 
 .rewiews-text-container {
   background-color: rgba(247, 243, 243, 0.8);
   padding: 67px 269px;
+  padding-bottom: 0;
 }
 
 .rewiews-text-container-title {
@@ -640,10 +730,13 @@ body {
 }
 
 .letter {
+  display: flex;
   background-color: #6F7188;
   width: 210px;
   height: 36px;
-  margin: 0 899px;
+  margin: 0 1721px;
+  position: relative;
+  align-items: center;
 }
 
 .letter-btn {
@@ -675,7 +768,7 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-  left: -963px;
+  left: -1020px;
   width: 77px;
   height: 14px;
   background: linear-gradient(180deg, #FF2F34 0%, #F25D03 100%);
@@ -689,6 +782,54 @@ body {
   margin-top: 177px;
   justify-content: space-between;
   padding-bottom: 117px;
+}
+
+.clients-img {
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.clients-img:hover {
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.logo-container {
+  position: relative;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.logo-container .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -80px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 60px;
+}
+
+.logo-container .slick-arrow.slick-prev {
+  left: 0;
+  background: url(../img/left-arrow.svg) 0 0 / 100% no-repeat;
+  border: none;
+}
+
+.logo-container .slick-arrow.slick-next {
+  right: 0;
+  background: url(../img/right-arrow.svg) 0 0 / 100% no-repeat;
+  border: none;
 }
 
 /*СТИЛИ ДЛЯ БЛОКА ЗАКАЗАТЬ*/

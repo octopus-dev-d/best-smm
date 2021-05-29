@@ -31,36 +31,36 @@
             <nav class="menu">
                 <ul class="menu-list">
                     <li class="menu-list-item">
-                        <a class="menu-link" href="">о нас<img class="nav-arrow" src="img/Arrow.png" alt="arrow"></a>
+                        <a class="menu-link" href="#about">о нас<img class="nav-arrow" src="img/Arrow.png" alt="arrow"></a>
                     </li>
                     <li class="menu-list-item">
-                        <a class="menu-link" href="">наши услуги<img class="nav-arrow" src="img/Arrow.png" alt="arrow"></a>
+                        <a class="menu-link" href="#services">наши услуги<img class="nav-arrow" src="img/Arrow.png" alt="arrow"></a>
                     </li>
                     <li class="menu-list-item">
-                        <a class="menu-link" href="">тарифы<img class="nav-arrow" src="img/Arrow.png" alt="arrow"></a>
+                        <a class="menu-link" href="#tariffs">тарифы<img class="nav-arrow" src="img/Arrow.png" alt="arrow"></a>
                     </li>
                     <li class="menu-list-item">
-                        <a class="menu-link" href="">наша команда<img class="nav-arrow" src="img/Arrow.png" alt="arrow"></a>
+                        <a class="menu-link" href="#team">наша команда<img class="nav-arrow" src="img/Arrow.png" alt="arrow"></a>
                     </li>
                     <li class="menu-list-item">
                         <a class="menu-link" href="">блог<img class="nav-arrow" src="img/Arrow.png" alt="arrow"></a>
                     </li>
                     <li class="menu-list-item">
-                        <a class="menu-link" href="">портфолио<img class="nav-arrow" src="img/Arrow.png" alt="arrow"></a>
+                        <a class="menu-link" href="#portfolio">портфолио<img class="nav-arrow" src="img/Arrow.png" alt="arrow"></a>
                     </li>
                     <li class="menu-list-item">
-                        <a class="menu-link" href="">отзывы</a>
+                        <a class="menu-link" href="#rewiews">отзывы</a>
                     </li>
                 </ul>
             </nav>
         </div>
         <div class="btn-top">
-          <button class="button-company-button">Заказать</button>
+          <button class="button-company-button"><a href="#order">Заказать</a></button>
         </div>
       </div>
     </header>
     <main>
-      <section class="about">
+      <section id="about" class="about">
         <div class="container">
           <h2 class="section-title">о нас</h2>
           <div class="about-block">
@@ -144,7 +144,7 @@
           </div>
         </div>
       </section>
-      <section class="services">
+      <section id="services" class="services">
         <div class="container">
           <h2 class="section-services">наши услуги</h2>
           <p class="section-text">
@@ -270,16 +270,13 @@
                 </div>
               </div>
             </div>
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <script src="js/slick.min.js"></script>
-            <script src="js/script.js"></script>
           </div>
           <div class="btn-about">
             <button class="about-button">Заказать</button>
           </div>
         </div>
       </section>
-      <section class="tariffs">
+      <section id="tariffs" class="tariffs">
         <div class="container">
           <h2 class="section-tariffs-title">наши тарифы</h2>
         </div>
@@ -291,7 +288,7 @@
           </div>
         </div>
       </section>
-      <section class="team">
+      <section id="team" class="team">
         <div class="container">
           <h2 class="section-team-title">наша команда</h2>
           <div class="card-team">
@@ -319,54 +316,116 @@
           </div>
         </div>
       </section>
-      <section class="portfolio">
+      <section id="portfolio" class="portfolio">
         <div class="container">
           <h2 class="section-portfolio-title">портфолио</h2>
+        </div>
+        <div class="container-swiper ptf">
           <div class="portfolio-cards">
-            <img src="img/pf-card1.png" alt="" class="pf-cards">
-            <img src="img/pf-card2.png" alt="" class="pf-cards">
-            <img src="img/pf-card3.png" alt="" class="pf-cards">
+            <div class="ptf-cards">
+              <img src="img/pf-card1.png" alt="" class="pf-cards">
+            </div>
+            <div class="ptf-cards">
+              <img src="img/pf-card2.png" alt="" class="pf-cards">
+            </div>
+            <div class="ptf-cards">
+              <img src="img/pf-card3.png" alt="" class="pf-cards">
+            </div>
+            <div class="ptf-cards">
+              <img src="img/pf-card1.png" alt="" class="pf-cards">
+            </div>
+            <div class="ptf-cards">
+              <img src="img/pf-card2.png" alt="" class="pf-cards">
+            </div>
+            <div class="ptf-cards">
+              <img src="img/pf-card3.png" alt="" class="pf-cards">
+            </div>
+            <div class="ptf-cards">
+              <img src="img/pf-card1.png" alt="" class="pf-cards">
+            </div>
+            <div class="ptf-cards">
+              <img src="img/pf-card2.png" alt="" class="pf-cards">
+            </div>
+            <div class="ptf-cards">
+              <img src="img/pf-card3.png" alt="" class="pf-cards">
+            </div>
           </div>
         </div>
       </section>
-      <section class="rewiews">
+      <section id="rewiews" class="rewiews">
         <div class="container">
           <h2 class="section-rewiews-title">отзывы</h2>
-          <div class="rewiews-container">
-            <div class="rewiews-text-container">
-              <h3 class="rewiews-text-container-title">наргиз</h3>
-              <p class="rewiews-text-container-des">Отличное агентство! Быстро и качественно, денег много не взяли. Заказал разработку корпоративного дизайна, всю работу сделали в срок. Чувствуется профессионализм и бережное отношение к клиентам!</p>
-              <p class="rewiews-text-container-company">ТОО “Класная компания”</p>
-            </div>
-            <div class="letter">
-              <a href="" class="letter-btn">благодарственное письмо</a>
+        </div>
+          <div class="container-swiper">
+            <div class="rewiews-container">
+              <div class="rewiews-text-container">
+                <h3 class="rewiews-text-container-title">наргиз</h3>
+                <p class="rewiews-text-container-des">Отличное агентство! Быстро и качественно, денег много не взяли. Заказал разработку корпоративного дизайна, всю работу сделали в срок. Чувствуется профессионализм и бережное отношение к клиентам!</p>
+                <p class="rewiews-text-container-company">ТОО “Класная компания”</p>
+                <div class="letter">
+                  <a href="" class="letter-btn">благодарственное письмо</a>
+                </div>
+              </div>
+
+              <div class="rewiews-text-container">
+                <h3 class="rewiews-text-container-title">наргиз</h3>
+                <p class="rewiews-text-container-des">Отличное агентство! Быстро и качественно, денег много не взяли. Заказал разработку корпоративного дизайна, всю работу сделали в срок. Чувствуется профессионализм и бережное отношение к клиентам!</p>
+                <p class="rewiews-text-container-company">ТОО “Класная компания”</p>
+                <div class="letter">
+                  <a href="" class="letter-btn">благодарственное письмо</a>
+                </div>
+              </div>
+
+              <div class="rewiews-text-container">
+                <h3 class="rewiews-text-container-title">наргиз</h3>
+                <p class="rewiews-text-container-des">Отличное агентство! Быстро и качественно, денег много не взяли. Заказал разработку корпоративного дизайна, всю работу сделали в срок. Чувствуется профессионализм и бережное отношение к клиентам!</p>
+                <p class="rewiews-text-container-company">ТОО “Класная компания”</p>
+                <div class="letter">
+                  <a href="" class="letter-btn">благодарственное письмо</a>
+                </div>
+              </div>
+          
             </div>
           </div>
-        </div>
+        
       </section>
       <section class="clients">
         <div class="container">
           <h2 class="section-clients-title">наши клиенты</h2>
+        </div>
+        <div class="container-swiper">
           <div class="logo-container">
-          <div class="clients-logo">
-            <img src="img/jap.png" alt="">
-          </div>
-          <div class="clients-logo">
-            <img src="img/bazar.png" alt="">
-          </div>
-          <div class="clients-logo">
-            <img src="img/gm.png" alt="">
-          </div>
-          <div class="clients-logo">
-            <img src="img/india.png" alt="">
-          </div>
-          <div class="clients-logo">
-            <img src="img/int.png" alt="">
-          </div>
-          </div>
+            <div class="clients-logo">
+              <img class="clients-img" src="img/jap.png" alt="">
+            </div>
+            <div class="clients-logo">
+              <img class="clients-img" src="img/bazar.png" alt="">
+            </div>
+            <div class="clients-logo">
+              <img class="clients-img" src="img/gm.png" alt="">
+            </div>
+            <div class="clients-logo">
+              <img class="clients-img" src="img/india.png" alt="">
+            </div>
+            <div class="clients-logo">
+              <img class="clients-img" src="img/int.png" alt="">
+            </div>
+            <div class="clients-logo">
+              <img class="clients-img" src="img/sel.png" alt="">
+            </div>
+            <div class="clients-logo">
+              <img class="clients-img" src="img/bestfood.png" alt="">
+            </div>
+            <div class="clients-logo">
+              <img class="clients-img" src="img/isker.png" alt="">
+            </div>
+            <div class="clients-logo">
+              <img class="clients-img" src="img/alempro.png" alt="">
+            </div>
+            </div>
         </div>
       </section>
-      <section class="order">
+      <section id="order" class="order">
         <div class="container">
           <h2 class="section-order-title">заказать</h2>
           <p class="order-title-text">Отправьте ваш номер телефона, мы перезвоним, чтобы обсудить задачи<br> вашего бизнеса и способа решения</p>
@@ -429,5 +488,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
