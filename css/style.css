@@ -458,9 +458,84 @@ body {
   display: block;
 }
 
-.card {
-  margin-top: 324px;
+.tariffs-images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.tariffs-cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 161px;
+}
+
+.card {
+  margin-top: 191px;
+  width: 207px;
+  margin-right: 18px;
+}
+
+.cards-img3 {
+  padding-bottom: 100px;
+}
+
+.cards-img4 {
+  padding-bottom: 100px;
+}
+
+.card:nth-child(1) {
+  margin-top: 135px;
+}
+
+.card:nth-child(3) {
+  margin-top: 55px;
+}
+
+.card:nth-child(4) {
+  margin-top: 70px;
+}
+
+.tar-img {
+  position: relative;
+}
+
+.text-tar-img {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  right: 50%;
+  bottom: 50%;
+  margin: 0 auto;
+  font-size: 48px;
+}
+
+.card-title {
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: normal;
+}
+
+.tar-btn {
+  margin-top: 10px;
+}
+
+.tariffs-btn {
+  font-size: 12px;
+  line-height: 14px;
+  color: #CBC0C7;
+  text-decoration: none;
+  margin-right: 3px;
+  margin-left: 60px;
+}
+
 
 /*СТИЛИ ДЛЯ БЛОКА НАША КОМАНДА*/
 
@@ -528,6 +603,8 @@ body {
   line-height: 14px;
   color: #CBC0C7;
   text-decoration: none;
+  margin-right: 3px;
+  margin-left: 190px;
 }
 
 /*СТИЛИ ДЛЯ БЛОКА ПОРТФОЛИО*/
@@ -565,16 +642,18 @@ body {
   margin-top: 240px;
   padding-bottom: 112px;
   position: relative;
+  padding-left: 70px;
+  padding-right: 60px;
 }
 
 .portfolio-cards .slick-arrow {
   position: absolute;
-  top: 70%;
+  top: 55%;
   margin: -80px 0px 0px 0px;
   z-index: 10;
   font-size: 0;
-  width: 30px;
-  height: 60px;
+  width: 56px;
+  height: 56px;
 }
 
 .portfolio-cards .slick-arrow.slick-prev {
