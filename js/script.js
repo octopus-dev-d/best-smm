@@ -1,3 +1,5 @@
+new WOW().init();
+
 $(document).ready(function() {
     $('.logo-container').slick({
         arrows:true,
@@ -28,6 +30,18 @@ $(document).ready(function() {
     $('.portfolio-cards').slick({
         arrows: true,
         dots: true,
+        autoplay: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        speed: 1000,
+        easing: 'ease',
+        autoplaySpeed:3000,
+    });
+});
+
+$(document).ready(function() {
+    $('.card-team').slick({
+        arrows: true,
         autoplay: true,
         slidesToShow: 3,
         slidesToScroll: 3,
