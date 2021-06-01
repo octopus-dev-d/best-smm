@@ -33,7 +33,7 @@ body {
 }
 
 .header-logo {
-  margin-top: 70px;
+  margin-top: 110px;
 }
 
 .company-header::after {
@@ -128,7 +128,7 @@ body {
   margin: auto;
 }
 
-.container-swiper {
+.container-swiper, .wrapper {
   width: 100%;
   max-width: 1230px;
   margin: auto;
@@ -453,7 +453,7 @@ body {
   padding-top: 69px;
   background-image: url(../img/tariffs-bg.png);
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center center;
   background-size: cover;
 }
 
