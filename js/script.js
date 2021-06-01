@@ -50,3 +50,16 @@ $(document).ready(function() {
         autoplaySpeed:3000,
     });
 });
+
+$(document).ready(function() {
+    $('.swiper-slide, .swiper-slide-second').slick({
+        arrows:true,
+        autoplay:true,
+        adaptiveHeight: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 1000,
+        easing: 'ease',
+        autoplaySpeed:3000,
+    });
+});
