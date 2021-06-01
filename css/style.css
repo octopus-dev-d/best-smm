@@ -16,15 +16,24 @@ body {
 .company {
   padding-top: 83px;
   padding-bottom: 212px;
-  background-image: url("../img/header-logo.jpg");
+  background-image: url("../img/header-bg.png");
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 1080px;
 }
 
 .company-header {
   margin-left: -40px;
   position: relative;
   padding-left: 60px;
+}
+
+.header-logo {
+  margin-top: 70px;
 }
 
 .company-header::after {
@@ -170,7 +179,7 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   color: #fff;
-  margin-top: 404px;
+  margin-top: 20px;
   margin-left: 30px;
 }
 
