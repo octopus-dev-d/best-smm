@@ -42,7 +42,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('.card-team').slick({
         arrows: true,
-        autoplay: true,
+        autoplay: false,
         slidesToShow: 3,
         slidesToScroll: 3,
         speed: 1000,
@@ -63,3 +63,8 @@ $(document).ready(function() {
         autoplaySpeed:3000,
     });
 });
+
+$(".team-btn").click(function(e) {
+	e.preventDefault();
+  $(this).prev().toggleClass("text-open")
+})
