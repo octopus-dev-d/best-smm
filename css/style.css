@@ -763,6 +763,52 @@ body {
   padding-right: 60px;
 }
 
+.ptf-block {
+  position: relative;   
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.block__mask {
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right: 12px;
+  opacity: 0;
+  height: 58%;
+  background: rgba(94, 24, 96, 0.8); 
+  
+  transform: translateY(-100%);
+  transition: all .27s ease-in-out;
+}
+
+.block__mask:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 1px;
+  height: 100%;
+}
+
+.block__mask p {
+  display: inline-block;
+  vertical-align: middle;  
+  width: 85%;  
+  font-family: Tahoma, serif;
+  text-align: center;
+  font-size: .8rem;
+  line-height: 1.25rem;
+  color: #fff;
+  
+  transition: all .27s .27s ease-in-out;
+}
+
+.ptf-block:hover .block__mask {
+  opacity: .85;
+  transform: translateY(0%);
+}
+
 .portfolio-cards .slick-arrow {
   position: absolute;
   top: 55%;
