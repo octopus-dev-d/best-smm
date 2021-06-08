@@ -778,7 +778,6 @@ body {
   opacity: 0;
   height: 58%;
   background: rgba(94, 24, 96, 0.8); 
-  
   transform: translateY(-100%);
   transition: all .27s ease-in-out;
 }
@@ -807,11 +806,36 @@ body {
 
 .pf-mask-text {
   margin-left: 15px;
+  position: relative;
 }
 
 .ptf-block:hover .block__mask {
   opacity: .85;
   transform: translateY(0%);
+}
+
+.pf-button {
+  width: 191px;
+  height: 40px;
+  background: linear-gradient(180deg, #FF2F34 0%, #F25D03 100%);
+  border-radius: 10px;
+  margin-left: 80px;
+  position: absolute;
+  top: 200px;
+}
+
+.pf-btn-link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.pf-btn-link:hover {
+  text-decoration: underline;
 }
 
 .portfolio-cards .slick-arrow {
@@ -1308,4 +1332,63 @@ body {
   margin: 0;
   font-size: 11px;
   line-height: 13px;
+}
+
+/*POPUP ДЛЯ БЛОКА ОТЗЫВЫ*/
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup:target .popup__content {
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  opacity: 1;
+}
+
+.popup__area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.popup__content {
+  position: relative;
+  transform: translate(0px, -100%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+.popup__close {
+  position: absolute;
+  right: -30px;
+  top:20px;
+  font-size: 42px;
+  border: 2px solid #6F7188;
+  border-radius: 42px;
+  text-decoration: none;
+  color: #6F7188;
 }
