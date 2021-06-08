@@ -774,7 +774,7 @@ body {
   top:0;
   left:0;
   bottom:0;
-  right: 12px;
+  right: 13px;
   opacity: 0;
   height: 58%;
   background: rgba(94, 24, 96, 0.8); 
@@ -795,13 +795,18 @@ body {
   display: inline-block;
   vertical-align: middle;  
   width: 85%;  
-  font-family: Tahoma, serif;
+  font-family: Roboto;
   text-align: center;
-  font-size: .8rem;
-  line-height: 1.25rem;
   color: #fff;
-  
   transition: all .27s .27s ease-in-out;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.pf-mask-text {
+  margin-left: 15px;
 }
 
 .ptf-block:hover .block__mask {
