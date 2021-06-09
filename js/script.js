@@ -1,4 +1,8 @@
+// Анимация
+
 new WOW().init();
+
+// Карусели
 
 $(document).ready(function() {
     $('.logo-container').slick({
@@ -64,7 +68,18 @@ $(document).ready(function() {
     });
 });
 
+// Раскрытие текста
+
 $(".team-btn").click(function(e) {
 	e.preventDefault();
   $(this).prev().toggleClass("text-open")
 })
+
+// Плавная прокрутка
+
+$(document).on("click", "nav a, .button-company-button-link", function(e) {
+    e.preventDefault();
+    let id  = $(this).attr('href');
+    let top = $(id).offset().top; // получаем координаты блока
+    $('body, html').animate({scrollTop: top}, 800); // плавно переходим к блоку
+});
