@@ -726,6 +726,11 @@ body {
 
 /*СТИЛИ ДЛЯ БЛОГА*/
 
+.blog-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .blog__img {
   width: 651px;
 }
@@ -760,6 +765,10 @@ body {
   margin: auto;
 }
 
+.blog-news {
+  margin-bottom: 78px;
+}
+
 .blog__title {
   font-weight: bold;
   font-size: 30px;
@@ -777,6 +786,114 @@ body {
   width: 650px;
   font-size: 24px;
   line-height: 28px;
+  color: #6F7188;
+}
+
+.search {
+  display: flex;
+}
+
+.subscribe-search {
+  position: relative;
+}
+
+.search input[type="text"] {
+  display: inline-block;
+  width: 380px;
+  padding: 16px 20px;
+  box-sizing: border-box;
+  background-color: #F6F3F3;
+  outline: none;
+  border: none;
+}
+
+.search .subscribe-search {
+  background-image: url(../img/search-img.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  width: 48px;
+  height: 48px;
+  border: none;
+  outline: none;
+}
+
+.search .visually-hidden {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+}
+
+.button-search {
+  background-color: #F6F3F3;
+  border: 0;
+  cursor: pointer;
+}
+
+.categories {
+  background-color: #F6F3F3;
+  width: 428px;
+  margin-top: 21px;
+  margin-bottom: 56px;
+}
+
+.categories-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.categories-list-item {
+  padding: 15px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #6F7188;
+  margin: 0 27px;
+}
+
+.categories-list-item:nth-child(6) {
+  border-bottom: none;
+}
+
+.categories-list-link {
+  color: #6F7188;
+  text-decoration: none;
+  margin-left: 27px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.categories-list-counter {
+  font-weight: 700;
+  font-size: 12px;
+  color: #b59f5b;
+  vertical-align: super;
+}
+
+.blog-answer {
+  background-color: #F7F3F3;
+  width: 428px;
+  padding: 34px 1px 10px 18px;
+}
+
+.answer__title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  color: #6F7188;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.answer__text {
+  font-size: 18px;
+  line-height: 22px;
+  padding-bottom: 20px;
+}
+
+.answer-link {
+  text-decoration: underline;
   color: #6F7188;
 }
 
