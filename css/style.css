@@ -799,23 +799,30 @@ body {
 
 .search input[type="text"] {
   display: inline-block;
-  width: 380px;
+  width: 359px;
+  height: 69px;
   padding: 16px 20px;
   box-sizing: border-box;
   background-color: #F6F3F3;
   outline: none;
   border: none;
+  color: #6F7188;
 }
 
 .search .subscribe-search {
   background-image: url(../img/search-img.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 20px;
-  width: 48px;
-  height: 48px;
+  background-size: 35px;
+  width: 69px;
+  height: 69px;
   border: none;
   outline: none;
+}
+
+input::placeholder {
+  color: #6F7188;
+  padding-left: 55px;
 }
 
 .search .visually-hidden {
@@ -823,6 +830,11 @@ body {
   height: 1px;
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute;
+}
+
+.field {
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .button-search {
@@ -845,7 +857,7 @@ body {
 }
 
 .categories-list-item {
-  padding: 15px 0;
+  padding: 19.2px 0;
   font-size: 14px;
   border-bottom: 1px solid #6F7188;
   margin: 0 27px;
@@ -862,6 +874,10 @@ body {
   font-weight: normal;
   font-size: 20px;
   line-height: 23px;
+}
+
+.categories-list-link:hover {
+  text-decoration: underline;
 }
 
 .categories-list-counter {
@@ -895,6 +911,45 @@ body {
 .answer-link {
   text-decoration: underline;
   color: #6F7188;
+}
+
+.blog-heading {
+  margin-top: -170px;
+}
+
+.heading {
+  display: flex;
+  background-color: #6F7188;
+  border-radius: 5px;
+}
+
+.heading-name {
+  margin-left: 170px;
+}
+
+.heading-arrows {
+  margin-left: 130px;
+  margin-top: 5px;
+}
+
+.heading-title {
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-top: 11px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.heading-text {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: bold;
+  margin-bottom: 11px;
+  margin-top: 0px;
+  text-align: center;
 }
 
 /*СТИЛИ ДЛЯ БЛОКА ПОРТФОЛИО*/
@@ -1250,7 +1305,7 @@ body {
 
 .logo-container {
   position: relative;
-  padding-left: 60px;
+  padding-left: 90px;
   padding-right: 60px;
 }
 
