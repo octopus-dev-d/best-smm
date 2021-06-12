@@ -820,7 +820,7 @@ body {
   outline: none;
 }
 
-input::placeholder {
+.field input::placeholder {
   color: #6F7188;
   padding-left: 55px;
 }
