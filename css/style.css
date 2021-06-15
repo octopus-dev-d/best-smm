@@ -11,6 +11,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 /*СТИЛИ ДЛЯ ШАПКИ*/
 
 .company {
