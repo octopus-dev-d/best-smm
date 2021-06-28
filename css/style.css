@@ -665,6 +665,12 @@ body.lock {
   margin-left: 60px;
 }
 
+.tar-cost-popup {
+  font-size: 36px;
+  line-height: 30px;
+  color: rgba(242, 93, 3, 1);
+}
+
 
 /*СТИЛИ ДЛЯ БЛОКА НАША КОМАНДА*/
 
@@ -1727,6 +1733,12 @@ body.lock {
   font-size: 24px;
   line-height: 30px;
   padding-right: 30px;
+  border-bottom: 1px solid #CBC0C7;
+  padding-bottom: 25px;
+}
+
+.text-p:nth-child(5) {
+  border-bottom: none;
 }
 
 .popup-tar {
@@ -1738,11 +1750,19 @@ body.lock {
   left: 0;
   opacity: 0;
   visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
 }
 
 .popup-tar:target {
   opacity: 1;
   visibility: visible;
+}
+
+.popup-tar:target .popup-tar-content {
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  opacity: 1;
 }
 
 .popup__area {
@@ -1765,6 +1785,10 @@ body.lock {
   background-color: #F6F3F3;
   max-width: 1300px;
   position: relative;
+  transform: translate(0px, -100%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 }
 
 .popup-close {
