@@ -83,3 +83,117 @@ $(document).on("click", "nav a, .button-company-button-link", function(e) {
     let top = $(id).offset().top; // получаем координаты блока
     $('body, html').animate({scrollTop: top}, 800); // плавно переходим к блоку
 });
+
+// Карусели для модальных окон
+
+$(document).ready(function() {
+    $('.popup-ptf-design-logo-images').slick({
+        arrows:true,
+        dots: true,
+        autoplay:true,
+        adaptiveHeight: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 1000,
+        easing: 'ease',
+        autoplaySpeed:3000,
+    });
+});
+
+$(document).ready(function() {
+    $('.popup-ptf-design-inst-images').slick({
+        arrows:true,
+        dots: true,
+        autoplay:true,
+        adaptiveHeight: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 1000,
+        easing: 'ease',
+        autoplaySpeed:3000,
+    });
+});
+
+$(document).ready(function() {
+    $('.popup-ptf-photo-food-images').slick({
+        arrows:true,
+        dots: true,
+        autoplay:true,
+        adaptiveHeight: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 1000,
+        easing: 'ease',
+        autoplaySpeed:3000,
+    });
+});
+
+$(document).ready(function() {
+    $('.popup-ptf-photo-por-images').slick({
+        arrows:true,
+        dots: true,
+        autoplay:true,
+        adaptiveHeight: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 1000,
+        easing: 'ease',
+        autoplaySpeed:3000,
+    });
+});
+
+$(document).ready(function() {
+    $('.popup-ptf-video-inst-images').slick({
+        arrows:true,
+        dots: true,
+        autoplay:true,
+        adaptiveHeight: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 1000,
+        easing: 'ease',
+        autoplaySpeed:3000,
+    });
+});
+
+$(document).ready(function() {
+    $('.popup-ptf-video-youtube-images').slick({
+        arrows:true,
+        dots: true,
+        autoplay:true,
+        adaptiveHeight: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 1000,
+        easing: 'ease',
+        autoplaySpeed:3000,
+    });
+});
+
+$(document).ready(function() {
+    $('.popup-ptf-video-stories-images').slick({
+        arrows:true,
+        dots: true,
+        autoplay:true,
+        adaptiveHeight: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 1000,
+        easing: 'ease',
+        autoplaySpeed:3000,
+    });
+});
+
+$(document).ready(function() {
+    $('.popup-ptf-site-images').slick({
+        arrows:true,
+        dots: true,
+        autoplay:true,
+        adaptiveHeight: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 1000,
+        easing: 'ease',
+        autoplaySpeed:3000,
+    });
+});
