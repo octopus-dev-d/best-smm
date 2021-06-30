@@ -40,6 +40,15 @@ $(document).ready(function() {
         speed: 1000,
         easing: 'ease',
         autoplaySpeed:3000,
+        responsive: [
+            {
+              breakpoint: 564,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            }
+          ]
     });
 });
 
@@ -52,6 +61,15 @@ $(document).ready(function() {
         speed: 1000,
         easing: 'ease',
         autoplaySpeed:3000,
+        responsive: [
+            {
+              breakpoint: 564,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            }
+          ]
     });
 });
 
