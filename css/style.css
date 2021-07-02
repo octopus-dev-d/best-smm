@@ -2740,6 +2740,9 @@ body.lock {
 /*МОБИЛЬНАЯ ВЕРСИЯ САЙТА*/
 
 @media (max-width: 564px) {
+
+  /*БЛОК О НАС*/
+
   .company {
     background-image: url("../img/mobile-header-bg.png");
     background-repeat: no-repeat;
@@ -2814,10 +2817,241 @@ body.lock {
     text-align: center;
   }
 
+  .slider, .slider-production, .slider .slider-design {
+    display: block;
+  }
+
+  .wrapper {
+    padding: 0;
+  }
+
+  .project-image {
+    width: 100%;
+  }
+
+  .project-text {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .project-text-production {
+    width: 100%;
+    padding-bottom: 6px;
+  }
+
+  .project-text-design {
+    width: 100%;
+  }
+
+  .project-title {
+    margin-top: 0;
+  }
+
+  .slider-production {
+    margin-bottom: 24px;
+  }
+
+
   /*БЛОК НАШИ ТАРИФЫ*/
 
   .tariffs-cards-container {
     display: block;
+    background-image: url(../img/card-bg-mobile.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    margin-left: 0;
+    text-align: center;
   }
 
+  .container-t {
+    display: block;
+  }
+
+  .section-tariffs-title {
+    text-align: center;
+  }
+
+  .section-tariffs-title::after {
+    left: -150px;
+  }
+
+  .t-btn {
+    margin-left: 25%;
+  }
+
+  .tariffs-cards-container .slick-arrow {
+    position: absolute;
+    top: 24%;
+    z-index: 10;
+    font-size: 0;
+    width: 56px;
+    height: 56px;
+  }
+  
+  .tariffs-cards-container .slick-arrow.slick-prev {
+    left: 0;
+    background: url(../img/ptf-btn-left.svg) 0 0 / 100% no-repeat;
+    border: none;
+    margin-left: 10%;
+  }
+  
+  .tariffs-cards-container .slick-arrow.slick-next {
+    right: 0;
+    background: url(../img/ptf-btn-right.svg) 0 0 / 100% no-repeat;
+    border: none;
+    margin-right: 10%;
+  }
+
+  .card {
+    margin-top: 170px;
+    width: 350px;
+    margin-right: 18px;
+  }
+  
+  .cards-img3 {
+    padding-bottom: 10px;
+  }
+  
+  .cards-img4 {
+    padding-bottom: 10px;
+  }
+  
+  .card:nth-child(1) {
+    margin-top: 135px;
+  }
+  
+  .card:nth-child(3) {
+    margin-top: 55px;
+  }
+  
+  .card:nth-child(4) {
+    margin-top: 70px;
+  }
+
+  .tar-cost {
+    left: 150px;
+  }
+
+  .btn-about {
+    margin-top: 0;
+  }
+
+  /*БЛОК НАША КОМАНДА*/
+
+  .section-team-title {
+    text-align: center;
+  }
+
+  .section-team-title::after {
+    left: -150px;
+  }
+
+  /*БЛОК БЛОГ*/
+
+  .blog-title {
+    text-align: center;
+  }
+
+  .blog-title::after {
+    left: -120px;
+  }
+
+  .blog-container {
+    display: block;
+  }
+
+  .blog-news {
+    width: 100%;
+  }
+
+  .blog__text {
+    width: 100%;
+  }
+
+  .blog__img {
+    width: 100%;
+  }
+
+  .blog-heading {
+    margin-top: 30px;
+  }
+
+  /*БЛОК ПОРФОЛИО*/
+
+  .section-portfolio-title {
+    text-align: center;
+  }
+
+  .section-portfolio-title::after {
+    left: -410px;
+  }
+
+  /*БЛОК ОТЗЫВЫ*/
+
+  .section-rewiews-title {
+    text-align: center;
+  }
+
+  .section-rewiews-title::after {
+    left: -250px;
+  }
+
+  .section-clients-title {
+    text-align: center;
+  }
+
+  .section-clients-title::after {
+    left: -145px;
+  }
+
+  /*БЛОК ЗАКАЗАТЬ*/
+
+  .section-order-title {
+    text-align: center;
+    margin-left: 0;
+    padding-top: 50px;
+  }
+
+  .order-block {
+    display: block;
+    margin-left: 20px;
+  }
+
+  .order-title-text {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .social-links {
+    margin-bottom: 50px;
+  }
+
+  .contacts-block {
+    text-align: center;
+  }
+
+  .contacts-mail {
+    padding-bottom: 30px;
+  }
+
+  /*БЛОК КОНТАКТЫ*/
+
+  .footer-container {
+    display: block;
+    padding-top: 50px;
+  }
+
+  .logo {
+    margin-left: 30px;
+    margin-bottom: 60px;
+  }
+
+  .adress-footer, .contacts-tel-footer, .contacts-mail-footer {
+    margin-left: 30px;
+  }
+
+  .copyright {
+    text-align: center;
+  }
 }

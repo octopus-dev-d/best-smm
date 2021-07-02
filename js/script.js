@@ -14,6 +14,16 @@ $(document).ready(function() {
         speed: 1000,
         easing: 'ease',
         autoplaySpeed:3000,
+        responsive: [
+            {
+              breakpoint: 564,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                arrows: false
+              }
+            }
+          ]
     });
 });
 
@@ -46,6 +56,7 @@ $(document).ready(function() {
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                arrows: false
               }
             }
           ]
@@ -67,6 +78,7 @@ $(document).ready(function() {
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                arrows: false,
               }
             }
           ]
@@ -83,6 +95,17 @@ $(document).ready(function() {
         speed: 1000,
         easing: 'ease',
         autoplaySpeed:3000,
+        responsive: [
+            {
+              breakpoint: 564,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                adaptiveHeight: false,
+              }
+            }
+          ]
     });
 });
 
@@ -213,5 +236,24 @@ $(document).ready(function() {
         speed: 1000,
         easing: 'ease',
         autoplaySpeed:3000,
+    });
+});
+
+$(document).ready(function() {
+    $('.tariffs-cards-container').slick({
+        arrows:false,
+        autoplay:true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 1000,
+        easing: 'ease',
+        autoplaySpeed:3000,
+        mobileFirst: true,
+        responsive: [
+            {
+            breakpoint: 564,
+            settings: 'unslick'
+            }
+        ]
     });
 });
