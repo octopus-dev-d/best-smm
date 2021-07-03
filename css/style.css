@@ -2930,7 +2930,7 @@ body.lock {
   }
 
   .tar-cost {
-    left: 150px;
+    left: 180px;
   }
 
   .btn-about {
@@ -2987,6 +2987,19 @@ body.lock {
     left: -410px;
   }
 
+  .pf-cards {
+    width: 100%;
+  }
+
+  .block__mask {
+    width: 100%;
+  }
+
+  .pf-button {
+    margin-left: 100px;
+  }
+
+
   /*БЛОК ОТЗЫВЫ*/
 
   .section-rewiews-title {
@@ -3003,6 +3016,33 @@ body.lock {
 
   .section-clients-title::after {
     left: -145px;
+  }
+
+  .rewiews-container {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .letter {
+    width: 38%;
+    margin: 0 30%;
+  }
+
+  .rewiews-text-container {
+    padding: 0;
+    width: 10%;
+  }
+
+  .rewiews-text-container-des {
+    width: 100%;
+  }
+
+  .rewiews-text-container-company {
+    width: 100%;
+  }
+
+  .rewiews-text-container-title {
+
   }
 
   /*БЛОК ЗАКАЗАТЬ*/
